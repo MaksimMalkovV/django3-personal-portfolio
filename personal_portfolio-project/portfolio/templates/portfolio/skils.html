@@ -1,0 +1,27 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="homeFons">
+    <div class="home-content">
+        <h3>A Little about My</h3>
+        <h1>SKILS</h1>
+        <h3>Programming languages</h3> 
+        <p>CSharp, Python, JavaScript,<br> 
+            Basics of Java, Kotlin
+        </p>
+        <br>
+        <h3>Real world languages</h3>
+        <br>
+        <p>Russian(native), English(A2), Garman(A1)</p>
+        <div class="home-sci">
+            <a href="https://vk.com/m.malkov2013" style="--i:7"><i class='bx bxl-vk' ></i></a>
+            <a href="https://t.me/Max_Mal20" style="--i:8"><i class='bx bxl-telegram' ></i></a>
+            <a href="mailto:m.malckov2013@yandex.ru" style="--i:9"><i class='bx bxl-gmail' ></i></a>
+            <a href="{% static 'portfolio/Resume.pdf' %}" style="--i:10"><i class='bx bxs-save'></i></a>
+          </div>
+    </div>
+    
+</section>
+
+{% endblock %}

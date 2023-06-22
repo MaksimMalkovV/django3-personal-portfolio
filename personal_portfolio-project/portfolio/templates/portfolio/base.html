@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatioble" content="IE=edge">
+  <link rel="stylesheet" href="{% static 'portfolio/custom.css' %}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Max Malkov</title>
+  <link rel="icon" type="image/png" href="{% static 'portfolio/Logo2.png' %}">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="{% url 'portfolio' %}" style="--i:1" class="active">Home</a>
+      <a href="{% url 'blog:all_blogs' %}" style="--i:2">About</a>
+      <a href="{% url 'skils' %}" style="--i:3">Skill</a>
+      <a href="{% static 'portfolio/Resume.pdf' %}" style="--i:4">Resume</a>
+    </nav>
+  </header>
+  <div>
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+
+   
+</body>
+
+</html>

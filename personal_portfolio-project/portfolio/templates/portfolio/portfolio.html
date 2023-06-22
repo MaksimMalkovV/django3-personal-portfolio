@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="home">
+    <div class="home-content">
+      <h3>Hello, It`s Me</h3>
+      <h1>Max Malkov</h1>
+      <h3>And I`m a <span class="text"></span></h3>
+      <p>I am a simple guy from the outback of our vast country,
+        <br>who wants to succeed in this world and reach certain heights.</p>
+        <div class="home-sci">
+          <a href="https://vk.com/m.malkov2013" style="--i:7"><i class='bx bxl-vk' ></i></a>
+          <a href="https://t.me/Max_Mal20" style="--i:8"><i class='bx bxl-telegram' ></i></a>
+          <a href="mailto:m.malckov2013@yandex.ru" style="--i:9"><i class='bx bxl-gmail' ></i></a>
+          <a href="{% static 'portfolio/Resume.pdf' %}" style="--i:10"><i class='bx bxs-save'></i></a>
+        </div>
+        <a href="{% url 'blog:all_blogs' %}" class="bth-box">More About Me</a>
+    </div>
+
+  </section>
+  <script src="{% static 'portfolio/main.js' %}"></script>
+
+{% endblock %}
